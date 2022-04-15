@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- add-company -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containerForm {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .containerFunny {
+            width: 370px;
+            height: 300px;
+        }
+
+        small {
+            font-size: x-large;
+            margin: 5px 0px 10px 0px;
+            max-width: max-content;
+        }
+
+        .error {
+            background-color: orangered;
+        }
+
+        .success {
+            background-color: rgb(74, 247, 140);
+
+        }
+    </style>
+</head>
+
+<body>
+    <form class="containerForm" action="../home/home.html" id="form" method="GET">
+        <label for="Name">Nombre: </label>
+        <input type="text" name="Name" id="name" placeholder="Ingresar nombre">
+        <small id="nameMessage"></small>
+
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="Ingresar contraseña">
+        <small id="passwordMessage"></small>
+
+        <button value="Registrarme" id="buttonRegister">Register</button>
+        <input type="submit" id="buttonLogin" class="" value="login">
+
+
+    </form>
+    <script src="./scriptLogin.js"></script>
+</body>
+
+</html>
