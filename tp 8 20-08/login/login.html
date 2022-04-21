@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- add-company -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+
+  <body>
+    <form
+      class="containerForm"
+      action="../home/home.html"
+      id="form"
+      method="GET"
+    >
+      <label class="labelNames" for="Name">Nombre: </label>
+      <input class="inputTxt" type="text" name="Name" id="name" placeholder="Ingresar nombre" />
+      <small id="nameMessage"></small>
+
+      <label class="labelNames" for="password">Contraseña: </label>
+      <input
+      class="inputTxt"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Ingresar contraseña"
+      />
+      <small id="passwordMessage"></small>
+
+      <button class="btnInput" value="Registrarme"  id="buttonRegister">Register</button>
+      <input  class="btnInput" type="submit"        id="buttonLogin" value="login" />
+    </form>
+    <script type="module" src="./scriptLogin.js"></script>
+  </body>
+</html>
