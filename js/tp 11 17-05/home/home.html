@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../stylesHome.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 
+        .Ideas: 
+            # Input para buscar pokemones
+            # Lugar para elegir tus pokemones
+            # Pestaña para ver los pokemones de los usuarios
+            # Que los puedas filtrar, eliminar, cambiar
+     -->
+  <div pokeDex class="pokedex" id="pokedex">
+    <input inputTxtSearch class="inputTxtSearch" type="text" value="bulbasaur" autocomplete="off">
+    <div class="viewPokemon"> <img pokeImg class="poke-img" src="./assets/poke-shadow.png" /> </div>
+    <div pokeName class="namePoke">
+      <p>Pokedex</p>
+    </div>
+    <div pokeId></div>
+    <div pokeTypes class="poke-types"></div>
+    <div pokeStats class="poke-stats"></div>
+    <img imgFlash class="imgFlash">
+    <img loadingFlash class="loadingFlash">
+
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./scriptPokedex.js"></script>
+  <script type="module" src="../home/scriptHome.js"></script>
+
+</body>
+
+</html>

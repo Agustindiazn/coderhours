@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- add-company -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+
+</head>
+
+<body>
+    <form class="containerForm" action="../login/login.html" id="form" method="GET">
+        <label class="labelNames" for="Name">Nombre: </label>
+        <input  class="inputTxt" type="text" name="Name" id="name" placeholder="Ingresar nombre">
+        <small id="nameMessage"></small>
+
+        <label class="labelNames" for="Email">Email: </label>
+        <input class="inputTxt" type="text" name="Email" id="email" placeholder="Ingresar email">
+        <small id="emailMessage"></small>
+
+        <label class="labelNames" for="password">Contraseña: </label>
+        <input class="inputTxt" type="password" name="password" id="password" placeholder="Ingresar contraseña">
+        <small id="passwordMessage"></small>
+
+        <label class="labelNames" for="PasswordConfirm">Confirmar contraseña: </label>
+        <input class="inputTxt" type="password" name="PasswordConfirm" id="passwordConfirm" placeholder="Repetir contraseña" required>
+        <small id="passwordConfirmMessage"></small>
+
+        <!-- <div class="containerFunny"> -->
+        <input class="btnInput" type="submit" value="Registrarme" id="register">
+        <button class="btnInput" id="buttonLogin" class="">Login</button>
+
+        <!-- <input type="submit" value="Login" id="login"> -->
+        <!-- </div> -->
+
+    </form>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script  type="module" src="./scriptRegister.js"></script>
+</body>
+
+</html>

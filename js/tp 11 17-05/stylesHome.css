@@ -1,0 +1,116 @@
+/* home */
+.containerChatUsers {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.containerChat {
+    background: rgba(126, 106, 106, 0.384);
+    height: 400px;
+    width: 420px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.divInputMsg {}
+
+.inputMsg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+.buttonsAction {
+    display: flex;
+    width: 300px;
+    position: inherit;
+    top: 108px;
+    left: 578px;
+    justify-content: space-between;
+}
+
+.buttonAdd,
+.buttonRemove {
+    font-size: 25px;
+    color: white;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.loadingFlash {
+    width: 26px;
+    height: 25px;
+    position: inherit;
+    top: 6px;
+    left: 68px;
+    background: #000000;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
